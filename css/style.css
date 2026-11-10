@@ -444,6 +444,8 @@ textarea:focus-visible,
 
 .product-card__button {
   align-self: flex-start;
+      margin-top: auto;
+
 }
 
 
