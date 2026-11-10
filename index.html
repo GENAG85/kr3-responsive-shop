@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный интернет-магазин с каталогом товаров и формой оформления заявки.">
+  <title>Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <button class="site-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню"><span class="site-nav-toggle__label">Меню</span><span class="site-nav-toggle__icon" aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="main-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <p class="hero__eyebrow">Контрольная работа №3</p>
+      <h1 class="hero__title">Учебный интернет-магазин</h1>
+      <p class="hero__text">
+        Адаптивный HTML/CSS-проект с каталогом товаров, карточкой товара,
+        формой заявки, таблицей характеристик и единой навигацией.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#popular">Перейти к товарам</a>
+        <a class="button button--secondary" href="catalog.html">Открыть каталог</a>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="section__heading">
+        <h2 class="section__title">Преимущества проекта</h2>
+        <p class="section__description">HTML/CSS-сайт из КР1 адаптирован под мобильные устройства с улучшенной доступностью.</p>
+      </div>
+      <ul class="advantages-list">
+        <li class="advantages-list__item">семантическая HTML-структура;</li>
+        <li class="advantages-list__item">единая навигация и внутренние ссылки;</li>
+        <li class="advantages-list__item">Flexbox, CSS Grid и БЭМ-именование;</li>
+        <li class="advantages-list__item">форма, модальное окно и базовая валидация.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="section__heading">
+        <h2 class="section__title">Популярные товары</h2>
+        <p class="section__description">Карточки дополнены категориями, статусами и бейджами.</p>
+      </div>
+
+      <div class="products-grid">
+       <article class="product-card product-card--featured">
+          <picture class="responsive-picture">
+            <source type="image/webp" srcset="images/product-1-240.webp 240w, images/product-1-480.webp 480w" sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw">
+            <img class="product-card__image" src="images/product-1.jpg" alt="Нашивка F-15C Eagle" width="480" height="640" loading="lazy" decoding="async">
+          </picture>
+
+          <div class="product-card__meta">
+            <span class="product-card__badge product-card__badge--new">
+              Новинка
+            </span>
+
+            <span class="product-card__stock">
+              В наличии
+            </span>
+          </div>
+
+          <p class="product-card__category">
+            Категория: нашивки
+          </p>
+
+          <h3 class="product-card__title">
+            F-15C Eagle Galm Team Patch
+          </h3>
+
+          <p class="product-card__description">
+            Тканевая нашивка с изображением истребителя F-15C Eagle Galm Team.
+          </p>
+
+          <p class="product-card__price">
+            Цена: 1000 руб.
+          </p>
+
+          <a
+            class="button button--primary product-card__button"
+            href="product.html"
+          >
+            Подробнее
+          </a>
+        </article>
+
+        <article class="product-card">
+          <picture class="responsive-picture">
+            <source type="image/webp" srcset="images/product-2-240.webp 240w, images/product-2-480.webp 480w" sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw">
+            <img class="product-card__image" src="images/product-2.jpg" alt="Нашивка Galm Team" width="480" height="640" loading="lazy" decoding="async">
+          </picture>
+
+          <div class="product-card__meta">
+            <span class="product-card__badge product-card__badge--hit">
+              Хит
+            </span>
+
+            <span class="product-card__stock">
+              В наличии
+            </span>
+          </div>
+
+          <p class="product-card__category">
+            Категория: нашивки
+          </p>
+
+          <h3 class="product-card__title">
+            Trigger Patch
+          </h3>
+
+          <p class="product-card__description">
+            Нашивка с эмблемой пилота Trigger.
+          </p>
+
+          <p class="product-card__price">
+            Цена: 1500 руб.
+          </p>
+
+          <a
+            class="button button--primary product-card__button"
+            href="product.html"
+          >
+            Подробнее
+          </a>
+        </article>
+
+        <article class="product-card product-card--discount">
+          <picture class="responsive-picture">
+            <source type="image/webp" srcset="images/product-3-240.webp 240w, images/product-3-480.webp 480w" sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw">
+            <img class="product-card__image" src="images/product-3.jpg" alt="Нашивка Mobius 1" width="480" height="640" loading="lazy" decoding="async">
+          </picture>
+
+          <div class="product-card__meta">
+            <span class="product-card__badge product-card__badge--discount">
+              Скидка
+            </span>
+
+            <span class="product-card__stock">
+              Осталось мало
+            </span>
+          </div>
+
+          <p class="product-card__category">
+            Категория: нашивки
+          </p>
+
+          <h3 class="product-card__title">
+            Mobius 1 Patch
+          </h3>
+
+          <p class="product-card__description">
+            Нашивка с символикой авиационного подразделения Mobius 1.
+          </p>
+
+          <p class="product-card__price">
+            Цена: 5000 руб.
+          </p>
+
+          <a
+            class="button button--primary product-card__button"
+            href="product.html"
+          >
+            Подробнее
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section__heading">
+        <h2 class="section__title">Отзывы покупателей</h2>
+        <p class="section__description">Самостоятельный раздел с отзывами пользователей магазина.</p>
+      </div>
+
+      <div class="reviews__list">
+        <article class="review-card">
+          <div class="review-card__header">
+            <h3 class="review-card__author">Иван</h3>
+            <span class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</span>
+          </div>
+          <p class="review-card__text">Реально крутой сайт ваще ништяк Z.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__header">
+            <h3 class="review-card__author">Анна</h3>
+            <span class="review-card__rating" aria-label="Оценка 4 из 5">★★★★☆</span>
+          </div>
+          <p class="review-card__text">Нуууу такой, 8/10, неплох но автор дурак.</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__header">
+            <h3 class="review-card__author">Максим</h3>
+            <span class="review-card__rating" aria-label="Оценка 5 из 5">★★★★★</span>
+          </div>
+          <p class="review-card__text">Мне пилят дверь болгаркой, 10/10.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="aside-info">
+      <h2 class="aside-info__title">Что реализовано</h2>
+      <p class="aside-info__text">
+        В проекте используются адаптивная вёрстка, CSS-переменные, Flexbox,
+        Grid, БЭМ, формы, таблица, модальное окно и базовые состояния интерфейса.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title" aria-describedby="order-dialog-description">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+    <p class="order-form__hint" id="order-dialog-description">Поля формы проверяются локально, без отправки на сервер.</p>
+    <p class="order-form__required-note"><span aria-hidden="true">*</span> Обязательные поля</p>
+
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя <span class="required-mark" aria-hidden="true">*</span></label>
+        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail <span class="required-mark" aria-hidden="true">*</span></label>
+        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон <span class="required-mark" aria-hidden="true">*</span></label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="order-phone-hint" required>
+        <small class="order-form__hint" id="order-phone-hint">Формат: +7 (900) 000-00-00</small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input class="order-form__input" id="order-date" name="date" type="date">
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки <span class="required-mark" aria-hidden="true">*</span></label>
+        <select class="order-form__select" id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+      </div>
+
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__checkbox-label" for="order-agreement">
+          <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
+          <span>Я согласен на обработку данных <span class="required-mark" aria-hidden="true">*</span></span>
+        </label>
+      </div>
+
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" role="status" aria-live="polite" hidden>Проверка пройдена. Это учебный пример: данные не отправлены на сервер.</p>
+</body>
+</html>

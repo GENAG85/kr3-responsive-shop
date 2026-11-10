@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Каталог товаров учебного интернет-магазина." name="description"/>
+<title>Каталог товаров — Учебный интернет-магазин</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<meta content="website" property="og:type"/>
+<meta content="Учебный интернет-магазин" property="og:title"/>
+<meta content="Учебный frontend-проект интернет-магазина." property="og:description"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+<header class="site-header">
+<div class="site-header__inner">
+<a class="site-header__logo" href="index.html">ShopProject</a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню" class="site-nav-toggle" type="button"><span class="site-nav-toggle__label">Меню</span><span aria-hidden="true" class="site-nav-toggle__icon">☰</span></button>
+<nav aria-label="Основная навигация" class="site-nav" id="main-navigation">
+<ul class="site-nav__list">
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="product.html">Товар</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="order.html">Заказ</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="contacts.html">Контакты</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link" href="index.html#reviews">Отзывы</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a class="breadcrumbs__link" href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Каталог</span>
+</nav>
+<section class="section">
+<div class="section__heading">
+<h1 class="section__title">Каталог товаров</h1>
+<p class="section__description">Учебный каталог с категориями, ценовым диапазоном и расширенными карточками товаров.</p>
+</div>
+</section>
+<section class="catalog-layout">
+<aside aria-labelledby="filters-title" class="catalog-filters">
+<h2 class="catalog-filters__title" id="filters-title">Фильтры</h2>
+<button aria-controls="catalog-filters-form" aria-expanded="false" class="catalog-filters__toggle" id="catalog-filters-toggle" type="button">Показать фильтры <span aria-hidden="true">▾</span></button>
+<form action="#" class="catalog-filters__form" id="catalog-filters-form" method="get">
+<fieldset class="catalog-filters__group">
+<legend class="catalog-filters__legend">Категория</legend>
+<label class="catalog-filters__option">
+<input class="catalog-filters__checkbox" name="category" type="checkbox" value="all"/>
+<span>Все товары</span>
+</label>
+<label class="catalog-filters__option">
+<input class="catalog-filters__checkbox" name="category" type="checkbox" value="popular"/>
+<span>Популярные</span>
+</label>
+<label class="catalog-filters__option">
+<input class="catalog-filters__checkbox" name="category" type="checkbox" value="new"/>
+<span>Новинки</span>
+</label>
+</fieldset>
+<fieldset class="catalog-filters__group">
+<legend class="catalog-filters__legend">Цена</legend>
+<label class="catalog-filters__field" for="price-from">От</label>
+<input class="catalog-filters__input" id="price-from" min="0" name="price-from" placeholder="0" type="number"/>
+<label class="catalog-filters__field" for="price-to">До</label>
+<input class="catalog-filters__input" id="price-to" min="0" name="price-to" placeholder="5000" type="number"/>
+</fieldset>
+<div class="catalog-filters__actions">
+<button class="button button--primary" type="submit">Применить</button>
+<button class="button button--secondary" type="reset">Сбросить</button>
+</div>
+</form>
+</aside>
+<section class="catalog-products">
+<div class="section__heading section__heading--compact">
+<h2 class="section__title">Список товаров</h2>
+<p class="section__description">Выберите товар, чтобы посмотреть характеристики и оформить заявку.</p>
+</div>
+<p aria-live="polite" class="catalog-products__count" id="catalog-results-count" role="status">Найдено товаров: 3</p>
+<div class="products-grid">
+<article class="product-card product-card--featured" data-category="new popular" data-price="1000">
+<picture class="responsive-picture">
+<source sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw" srcset="images/product-1-240.webp 240w, images/product-1-480.webp 480w" type="image/webp"/>
+<img alt="Нашивка F-15C Eagle" class="product-card__image" decoding="async" height="640" loading="lazy" src="images/product-1.jpg" width="480"/>
+</picture>
+<div class="product-card__meta">
+<span class="product-card__badge product-card__badge--new">
+              Новинка
+            </span>
+<span class="product-card__stock">
+              В наличии
+            </span>
+</div>
+<p class="product-card__category">
+            Категория: нашивки
+          </p>
+<h3 class="product-card__title">
+            F-15C Eagle Galm Team Patch
+          </h3>
+<p class="product-card__description">
+            Тканевая нашивка с изображением истребителя F-15C Eagle Galm Team.
+          </p>
+<p class="product-card__price">
+            Цена: 1000 руб.
+          </p>
+<a class="button button--primary product-card__button" href="product.html">
+            Подробнее
+          </a>
+</article>
+<article class="product-card" data-category="popular" data-price="1500">
+<picture class="responsive-picture">
+<source sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw" srcset="images/product-2-240.webp 240w, images/product-2-480.webp 480w" type="image/webp"/>
+<img alt="Нашивка Galm Team" class="product-card__image" decoding="async" height="640" loading="lazy" src="images/product-2.jpg" width="480"/>
+</picture>
+<div class="product-card__meta">
+<span class="product-card__badge product-card__badge--hit">
+              Хит
+            </span>
+<span class="product-card__stock">
+              В наличии
+            </span>
+</div>
+<p class="product-card__category">
+            Категория: нашивки
+          </p>
+<h3 class="product-card__title">
+            Trigger Patch
+          </h3>
+<p class="product-card__description">
+            Нашивка с эмблемой пилота Trigger.
+          </p>
+<p class="product-card__price">
+            Цена: 1500 руб.
+          </p>
+<a class="button button--primary product-card__button" href="product.html">
+            Подробнее
+          </a>
+</article>
+<article class="product-card product-card--discount" data-category="discount" data-price="5000">
+<picture class="responsive-picture">
+<source sizes="(max-width: 599px) calc(100vw - 48px), (max-width: 1023px) 45vw, 30vw" srcset="images/product-3-240.webp 240w, images/product-3-480.webp 480w" type="image/webp"/>
+<img alt="Нашивка Mobius 1" class="product-card__image" decoding="async" height="640" loading="lazy" src="images/product-3.jpg" width="480"/>
+</picture>
+<div class="product-card__meta">
+<span class="product-card__badge product-card__badge--discount">
+              Скидка
+            </span>
+<span class="product-card__stock">
+              Осталось мало
+            </span>
+</div>
+<p class="product-card__category">
+            Категория: нашивки
+          </p>
+<h3 class="product-card__title">
+            Mobius 1 Patch
+          </h3>
+<p class="product-card__description">
+            Нашивка с символикой авиационного подразделения Mobius 1.
+          </p>
+<p class="product-card__price">
+            Цена: 5000 руб.
+          </p>
+<a class="button button--primary product-card__button" href="product.html">
+            Подробнее
+          </a>
+</article>
+</div>
+</section>
+</section>
+</main>
+<footer class="site-footer" id="contacts">
+<div class="site-footer__inner">
+<p class="site-footer__text">© 2026 Учебный проект. Все права защищены.</p>
+<p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+</div>
+</footer>
+</body>
+</html>

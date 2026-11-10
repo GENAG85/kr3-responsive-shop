@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контактная информация учебного интернет-магазина.">
+  <title>Контакты — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Учебный интернет-магазин">
+  <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+  
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <button class="site-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню"><span class="site-nav-toggle__label">Меню</span><span class="site-nav-toggle__icon" aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="main-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current" aria-current="page">Контакты</span>
+    </nav>
+
+    <section class="section">
+      <div class="section__heading">
+        <h1 class="section__title">Контакты</h1>
+        <p class="section__description">Контактная информация учебного интернет-магазина.</p>
+      </div>
+
+      <div class="contacts-grid">
+        <article class="contact-card">
+          <h2 class="contact-card__title">Связаться с нами</h2>
+          <ul class="contact-card__list">
+            <li class="contact-card__item"><strong>Телефон:</strong> +7 (900) 000-00-00</li>
+            <li class="contact-card__item"><strong>E-mail:</strong> info@example.com</li>
+            <li class="contact-card__item"><strong>Адрес:</strong> г. Москва, учебный проект</li>
+          </ul>
+        </article>
+
+        <article class="contact-card contact-card--accent" id="feedback">
+          <h2 class="contact-card__title">Обратная связь</h2>
+          <p class="contact-card__text">Напишите сообщение через учебную форму. Данные остаются в браузере и не отправляются на сервер.</p>
+          <form class="contact-form" id="contact-form" action="#" method="post">
+            <div class="order-form__field">
+              <label class="order-form__label" for="contact-name">Имя</label>
+              <input class="order-form__input" id="contact-name" name="name" type="text" autocomplete="name" minlength="2" required>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label" for="contact-email">Электронная почта</label>
+              <input class="order-form__input" id="contact-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="order-form__field">
+              <label class="order-form__label" for="contact-message">Сообщение</label>
+              <textarea class="order-form__textarea" id="contact-message" name="message" rows="5" minlength="10" required></textarea>
+            </div>
+            <button class="button button--primary" type="submit">Проверить сообщение</button>
+            <p id="contact-feedback" class="inline-feedback" role="status" aria-live="polite" hidden></p>
+          </form>
+          <p class="contact-card__text">Для оформления заявки используйте <a href="order.html">страницу заказа</a>.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>

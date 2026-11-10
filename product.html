@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Карточка учебного товара интернет-магазина.">
+  <title>F-15C Eagle Galm Team Patch — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <button class="site-nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню"><span class="site-nav-toggle__label">Меню</span><span class="site-nav-toggle__icon" aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="main-navigation" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#reviews">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current" aria-current="page">F-15C Eagle Galm Team Patch</span>
+    </nav>
+
+    <section class="product-detail">
+      <div class="product-detail__media">
+        <span class="product-detail__badge">Новинка</span>
+        <picture class="responsive-picture">
+            <source type="image/webp" srcset="images/product-1-240.webp 240w, images/product-1-480.webp 480w" sizes="(max-width: 767px) calc(100vw - 64px), 45vw">
+            <img class="product-detail__image" src="images/product-1.jpg" alt="Нашивка с самолётом F-15C Eagle" width="480" height="640" loading="lazy" decoding="async">
+          </picture>
+      </div>
+
+      <div class="product-detail__content">
+        <p class="product-detail__category">Категория: нашивки</p>
+        <h1 class="product-detail__title">F-15C Eagle Galm Team Patch</h1>
+        <p class="product-detail__description">
+          Тканевая нашивка с изображением самолёта F-15C Eagle. Страница демонстрирует карточку товара,
+          подробное описание, характеристики, статус наличия и стоимость.
+        </p>
+        <p class="product-detail__stock">В наличии</p>
+        <p class="product-detail__price">Цена: 1000 руб.</p>
+        <div class="product-detail__actions">
+          <a class="button button--primary" href="order.html">Оформить заявку</a>
+          <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__heading">
+        <h2 class="section__title">Характеристики товара</h2>
+        <p class="section__description">Основные параметры выбранного учебного товара.</p>
+      </div>
+
+      <div class="product-table-wrap" tabindex="0" role="region" aria-label="Таблица характеристик товара">
+        <table class="product-table">
+          <caption>Основные характеристики товара</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Категория</td><td>Нашивки</td></tr>
+            <tr><td>Цена</td><td>1000 руб.</td></tr>
+            <tr><td>Наличие</td><td>В наличии</td></tr>
+            <tr><td>Артикул</td><td>SHOP-001</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+</body>
+</html>
